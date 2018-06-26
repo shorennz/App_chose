@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App_chose"
+             x:Class="App_chose.MainPage"
+             > <!--fix background IMAGE-->
+
+    <Grid Grid.Row="0" ColumnSpacing="0" RowSpacing="0" BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!-- fix image LOGO -->
+        <Image Grid.Row="0" x:Name="Local_img" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="150" />
+        <StackLayout Grid.Row="1" Orientation="Vertical" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="White">
+                <!-- PIN -->
+                <Entry x:Name="Pin1" TextColor="Black" Keyboard="Numeric" MaxLength="4" FontSize="36" WidthRequest="70" IsPassword="True" Placeholder="PIN"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
